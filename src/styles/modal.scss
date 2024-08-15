@@ -1,0 +1,113 @@
+.ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.698) !important;
+}
+
+.ant-modal {
+    width: 1000px !important;
+
+
+    .ant-modal-footer {
+        display: none;
+    }
+
+    .ant-modal-title {
+        display: none;
+    }
+
+    .ant-modal-body {
+        padding: 3% 3%;
+    }
+
+
+
+    .ant-modal-content {
+        border-radius: 0px !important;
+
+        border: 10px solid #6096BA;
+
+    }
+
+
+
+}
+
+.modalInfo {
+    background-color: #6096BA;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 10px;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 30px;
+
+    input {
+        margin: 10px 0px;
+        width: 100%;
+        font-size: 20px;
+        outline: none;
+        border: 2px solid #6096BA;
+        padding: 10px;
+
+    }
+
+    label {
+        font-size: 20px;
+
+    }
+
+    .buttonForm {
+        margin-top: 40px;
+        background-color: #6096BA;
+        color: white;
+    }
+
+}
+
+.buttonModal {
+    width: 500px;
+    height: 60px;
+    border-radius: 5px;
+    outline: none;
+    color: #6096BA;
+    font-size: 24px;
+    border: none;
+
+    // Ноутбуки и десктопы
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 400px;
+        font-size: 22px;
+
+    }
+
+    // Планшеты и ноутбуки
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 300px;
+        font-size: 20px;
+
+
+    }
+
+    // Стандартный телефон
+    @media (max-width: 767px) {
+        width: 250px;
+        font-size: 18px;
+
+    }
+
+    // Маленькиие телефоны
+    @media (max-width: 480px) {
+        width: 250px;
+        font-size: 16px;
+
+
+    }
+
+    &:hover {
+        background-color: #A3CEF1 !important;
+        color: white !important;
+    }
+
+}

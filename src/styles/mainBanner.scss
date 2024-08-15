@@ -1,0 +1,165 @@
+.wrapper {
+    background: url('../assets/mainBanner.png');
+    height: 1000px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        height: 800px;
+
+    }
+
+    // Планшеты и ноутбуки
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 600px;
+
+    }
+
+    // Стандартный телефон
+    @media (max-width: 767px) {
+        height: 500px;
+
+    }
+
+    // Маленькиие телефоны
+    @media (max-width: 480px) {
+
+        height: 400px;
+
+    }
+
+
+    .title {
+
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+       
+
+        &__header {
+            &__titleBlock {
+
+                height: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+
+                @media (min-width: 992px) and (max-width: 1199px) {}
+
+                // Планшеты и ноутбуки
+                @media (min-width: 768px) and (max-width: 991px) {}
+        
+                // Стандартный телефон
+                @media (max-width: 767px) {
+                    height: 300px;
+
+                }
+        
+                // Маленькиие телефоны
+                @media (max-width: 480px) {
+                    height: 250px;
+        
+        
+                }
+
+                &-cc {
+
+                    top: 180px;
+                    position: absolute;
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 600;
+
+                    // Ноутбуки и десктопы
+                    @media (min-width: 992px) and (max-width: 1199px) {}
+
+                    // Планшеты и ноутбуки
+                    @media (min-width: 768px) and (max-width: 991px) {}
+
+                    // Стандартный телефон
+                    @media (max-width: 767px) {
+                        font-size: 16px;
+                        top: 85px;
+                    }
+
+                    // Маленькиие телефоны
+                    @media (max-width: 480px) {
+                        font-size: 16px;
+                        top: 85px;
+
+
+                    }
+
+                }
+
+                &__title {
+                    height: 120px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 1;
+
+                    p {
+                        font-size: 90px;
+
+                        // Ноутбуки и десктопы
+                        @media (min-width: 992px) and (max-width: 1199px) {}
+
+                        // Планшеты и ноутбуки
+                        @media (min-width: 768px) and (max-width: 991px) {}
+
+                        // Стандартный телефон
+                        @media (max-width: 767px) {}
+
+                        // Маленькиие телефоны
+                        @media (max-width: 480px) {
+                            font-size: 50px;
+
+                        }
+
+                    }
+
+                    &-line {
+                        z-index: -1;
+                        position: absolute;
+                        bottom: 0;
+                        background-color: #6096BA;
+                        height: 32px;
+                        width: 520px;
+
+                        // Ноутбуки и десктопы
+                        @media (min-width: 992px) and (max-width: 1199px) {}
+
+                        // Планшеты и ноутбуки
+                        @media (min-width: 768px) and (max-width: 991px) {}
+
+                        // Стандартный телефон
+                        @media (max-width: 767px) {}
+
+                        // Маленькиие телефоны
+                        @media (max-width: 480px) {
+                            width: 320px;
+                            bottom: 22px;
+                            height: 22px;
+
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}

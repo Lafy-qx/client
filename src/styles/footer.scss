@@ -1,0 +1,98 @@
+.contactWrapper {
+    padding: 0 10%;
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+
+    // Ноутбуки и десктопы
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 0 4%;
+
+    }
+
+    // Планшеты и ноутбуки
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 0 2%;
+
+    }
+
+    // Стандартный телефон
+    @media (max-width: 767px) {
+        padding: 0 1%;
+
+    }
+
+    // Маленькиие телефоны
+    @media (max-width: 480px) {
+        font-size: 16px;
+        padding: 0 1%;
+
+
+
+    }
+
+    &__leftInfo,
+    &__rightInfo {
+        width: 650px;
+
+        &__textContainer {
+            margin-bottom: 30px;
+
+
+            .secondaryText {
+                color: rgba(69, 69, 69, 0.548);
+                font-size: 18px;
+
+                // Ноутбуки и десктопы
+                @media (min-width: 992px) and (max-width: 1199px) {}
+
+                // Планшеты и ноутбуки
+                @media (min-width: 768px) and (max-width: 991px) {}
+
+                // Стандартный телефон
+                @media (max-width: 767px) {}
+
+                // Маленькиие телефоны
+                @media (max-width: 480px) {
+                    font-size: 12px;
+
+
+
+                }
+            }
+
+            .mainText {}
+        }
+
+    }
+
+
+}
+
+.footer {
+    height: 200px;
+    background-color: #6096BA;
+
+    // Ноутбуки и десктопы
+    @media (min-width: 992px) and (max-width: 1199px) {}
+
+    // Планшеты и ноутбуки
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 150px;
+
+    }
+
+    // Стандартный телефон
+    @media (max-width: 767px) {
+        height: 125px;
+
+    }
+
+    // Маленькиие телефоны
+    @media (max-width: 480px) {
+        height: 100px;
+
+
+
+    }
+}
