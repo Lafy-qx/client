@@ -58,11 +58,90 @@ header {
         }
     }
 
+    .burgerMenu {
+        display: none;
+
+    }
+
+    .noneBurger {
+        display: none;
+    }
+
+    .burgerMenuActive {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.848);
+        z-index: 1;
+        width: 100%;
+        height: max-content;
+
+        &__header {
+            padding: 15px 10px;
+            height: 80px;
+            display: flex;
+            align-content: center;
+            justify-content: end;
+
+            &__close {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: white;
+                width: 50px;
+                height: 50px;
+
+            }
+        }
+
+        &__listBuger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 20px;
+
+            &__item {
+                color: white;
+                padding: 10px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: max-content;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+
+    }
+
     .list {
         display: flex;
-        width: 900px;
         justify-content: space-between;
         font-size: 20px;
+
+        &__burger {
+            width: max-content;
+            display: none;
+            height: 30px;
+
+            span {
+                width: 40px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: white;
+            }
+
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
+
+
+        }
 
         &__item {
             color: white;
@@ -77,7 +156,11 @@ header {
             display: inline-block;
             line-height: 1;
 
-            @media screen and (min-width: 767px) and (max-width:1023px) {}
+            // Стандартный телефон
+            @media (max-width: 767px) {
+                display: none;
+
+            }
 
 
             &:after {
@@ -110,11 +193,7 @@ header {
 
         }
 
-        // Стандартный телефон
-        @media (max-width: 767px) {
-            display: none;
 
-        }
 
 
     }
