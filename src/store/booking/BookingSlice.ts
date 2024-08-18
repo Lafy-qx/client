@@ -1,4 +1,3 @@
-import { bookingCreateFunc } from "./BookingActions";
 import { createSlice } from "@reduxjs/toolkit";
 import { bookingState } from "./BookingTypes";
 import { bookingCreateHandler } from "./BookingHandlers";

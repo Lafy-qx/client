@@ -11,9 +11,6 @@ import Card from './HomeComponents/Card';
 import Footer from '../../lib/footer/Footer';
 import CompanyInfo from './HomeComponents/CompanyInfo';
 
-
-
-
 function Home() {
     // Скроллинг к элементу
     const ref = useRef<null | HTMLDivElement>(null);
@@ -26,16 +23,6 @@ function Home() {
     const handleClickTwo = () => {
         refTwo.current?.scrollIntoView({ behavior: 'smooth' });
     };
-    // Таймер для загрузки страницы
-    const location = useLocation();
-    const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 3000);
-    }, [location.pathname])
-
-
     const dispatch = useAppDispatch();
 
     const { complexes } = useAppSelector((state) => state.complex);
@@ -45,8 +32,6 @@ function Home() {
     }, []);
     return (
         <>
-
-
             <MainBanner handleClick={handleClick} handleClickTwo={handleClickTwo} />
             <div className='headingLeft'>
                 <div className='headingLeft__container'>
@@ -79,9 +64,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            {/* <div ref={ref} style={{ backgroundColor: 'lime' }}>
-                bobbyhadz.com
-            </div> */}
             <Footer />
         </>
     )
