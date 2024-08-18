@@ -49,7 +49,7 @@ function Header({ handleClickHeader, handleClickTwoHeader }: { handleClickHeader
                     </div>
                 </div>
             }
-            <div className={isBurger === true ? "burgerMenuActive" : "burgerMenu"}>
+            <div className={`burgerMenuActive ${isBurger && "active"}`}>
                 <div className='burgerMenuActive__header'>
                     <a className='burgerMenuActive__header__close' onClick={() => {
                         setIsBurger(!isBurger)

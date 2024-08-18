@@ -68,14 +68,38 @@ header {
     }
 
     .burgerMenuActive {
-        display: block;
+        transform: translateY(-100%);
+        transition: all .3s;
         position: absolute;
         top: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.848);
-        z-index: 1;
         width: 100%;
         height: max-content;
+        &.active {
+            transform: translateY(0);
+        }
+
+        // Ноутбуки и десктопы
+        @media (min-width: 992px) and (max-width: 10000px) {
+            display: none;
+        }
+
+        // Планшеты и ноутбуки
+        @media (min-width: 768px) and (max-width: 991px) {
+            display: none;
+        }
+
+        // Стандартный телефон
+        @media (max-width: 767px) {
+            display: block;
+        }
+
+        // Маленькиие телефоны
+        @media (max-width: 480px) {
+            display: block;
+
+        }
 
         &__header {
             padding: 15px 10px;
